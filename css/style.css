@@ -59,7 +59,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #EAEAEA;
+	background-color: #3D73C5;
 	border-left: 1px solid #CCCCCC;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .user-wrap2::-webkit-scrollbar-track {
-	background-color: #EAEAEA;
+	background-color: #3D73C5;
 	border-left: 1px solid #CCCCCC;
 }
 
@@ -109,6 +109,7 @@ h3, .panel-heading {
 	font-size: 16px;
 	text-align: center;
 	font-weight: 400;
+	color: #3D73C5; !added
 }
 
 a {
@@ -152,7 +153,7 @@ a {
 .bg-switch .bgs .bg div {
 	width: 145px;
 	height: 95px;
-	border: 2px solid #FFFFFF;
+	border: 2px solid #3D73C5;
 	margin-bottom: 10px;
 	cursor: pointer;
 	transition: all 0.3s linear;
@@ -162,7 +163,7 @@ a {
 
 .hovered {
 	text-decoration: none;
-	background-color: #ECF0F1;
+	background-color: rgb(40, 44, 42);
 }
 
 #user-list2 {
@@ -177,6 +178,7 @@ a {
 	width: 32px;
 	height: 32px;
 	margin-right: 10px;
+	background: rgb(40, 44, 42);
 }
 
 #bg-switch-wrapper {
@@ -301,6 +303,7 @@ a {
 	font-size: 17px;
 	position: relative;
 	right: 9px;
+	color: #3D73C5;
 }
 
 .panel-heading img {
@@ -344,10 +347,12 @@ a {
 
 .panel-default {
 	background-color: rgb(60, 64, 62);
+	border-color: transparent;
 }
 
 .badge {
-	color: #2C3E50;
+	color: rgb(60, 64, 62);
+	background-color: #3D73C5;
 }
 
 .badge, .badge i {
@@ -379,6 +384,31 @@ a {
 
 #sessions, #actionsArea {
 	transition: all ease 3s;
+}
+
+
+#actionsArea a{
+	background: rgb(60, 64, 62);
+	color: #969c99;
+}
+
+#actionsArea a:hover{
+	background: #3D73C5;
+	color: white;
+}
+
+.dropdown-menu{
+	background: rgb(40, 44, 42) !important;
+	color: #3D73C5 !important;
+}
+
+.dropdown-menu li a{
+	color: #969c99;
+}
+
+.dropdown-menu li a:hover{
+	background: #3D73C5;
+	color: white;
 }
 
 .panel-body {
@@ -480,7 +510,7 @@ input.password.form-control:focus {
 	color: rgba(255, 255, 255, 0.72);
 	width: 145px;
 	height: 95px;
-	border: 2px solid #FFFFFF;
+	border: 2px solid #2C3E50;
 	margin-bottom: 10px;
 	cursor: pointer;
 	padding-top: 28.5px;
@@ -504,6 +534,7 @@ input.password.form-control:focus {
 	margin: 0 auto;
 	display: -webkit-box;
 	overflow: visible;
+	background: #3c403e;
 }
 
 #list-group {
@@ -551,6 +582,9 @@ input.password.form-control:focus {
 
 .list-group-item {
 	padding: 5px 15px;
+	background: rgb(40, 44, 42);
+	border-color: #3D73C5 !important;
+	color: #3D73C5 !important;
 }
 
 .list-group-item img {
@@ -569,11 +603,13 @@ a.list-group-item:focus, a.list-group-item.hovered {
 	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1) inset;
 	outline: none;
 	margin: 0px 0;
-	rgb(50, 54, 52)
+	background: rgb(50, 54, 52);
+	border-color: #3D73C5 !important;
+	color: #969c99 !important;
 }
 
 a.list-group-item.hover:not(:focus) {
-	background: #f0f0f0;
+	background: rgb(40, 44, 42);
 }
 
 a.list-group-item:focus:before, a.list-group-item:focus:after,
@@ -610,11 +646,23 @@ a.list-group-item:focus:after, a.list-group-item:hover:after, a.list-group-item.
 	padding-bottom: 30px;
 	padding-left: 25px;
 	padding-right: 25px;
+	background: rgb(40, 44, 42);
+}
+
+.modal-footer button{
+	background: rgb(60, 64, 62) !important;
+	color: #969c99 !important;
+}
+
+.modal-footer button:hover{
+	background: #3D73C5 !important;
+	color: white !important;
 }
 
 .modal-header {
 	padding-left: 25px;
 	padding-right: 25px;
+	background: rgb(60, 64, 62);
 }
 
 #statusArea {
@@ -657,5 +705,4 @@ a.list-group-item:focus:after, a.list-group-item:hover:after, a.list-group-item.
 .close:hover {
 	opacity: 1;
 }
-
 
